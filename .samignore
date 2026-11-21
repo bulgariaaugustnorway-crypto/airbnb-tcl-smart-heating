@@ -1,0 +1,46 @@
+# AWS SAM Packaging Ignore Rules (.samignore)
+# Guarantees that credentials, local caches, tests, and environment files are NEVER packaged into Lambda artifacts.
+
+.env
+.env.*
+*.env
+.venv/
+venv/
+env/
+ENV/
+*.pem
+*.key
+*.cert
+*.crt
+*.token
+credentials.json
+client_secret*.json
+
+# Runtime cache, state, and logs
+data/cache/*
+logs/*
+*.log
+
+# Git & GitHub metadata
+.git/
+.github/
+.gitignore
+.samignore
+
+# Testing, documentation & development scripts
+tests/
+docs/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.coverage
+htmlcov/
+
+# Local verification & manual scripts
+verify_*.py
+run_demo.py
+infra/
+samconfig.toml
+.aws-sam/
+README.md

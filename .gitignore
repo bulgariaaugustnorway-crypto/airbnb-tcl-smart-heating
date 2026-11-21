@@ -1,0 +1,48 @@
+# Private configuration
+.env
+.env.*
+!.env.example
+*.env
+.aws/
+*credentials*
+*secret*.json
+*token*.json
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+# Runtime occupancy data, logs, caches, state, and exports
+data/cache/
+data/history/
+logs/
+*.log
+*.jsonl
+*.ics
+!data/sample_calendars/*.ics
+response*.json
+out.json
+# Environments and generated artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+.aws-sam/
+*.zip
+*.egg-info/
+samconfig.toml
+security-results/
+review-results/
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
